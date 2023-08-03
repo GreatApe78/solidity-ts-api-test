@@ -4,7 +4,7 @@ import config from '../config';
 const getBlockNumber = async (req: Request, res: Response) => {
 	try {
 		const currentBlockNumber = await config.web3.eth.getBlockNumber();
-
+        
         return res.status(200).json({
             success:true,
             currentBlockNumber:Number(currentBlockNumber)
