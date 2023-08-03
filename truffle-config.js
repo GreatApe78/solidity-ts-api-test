@@ -1,5 +1,5 @@
 //truffle provider
-//const HDWalletProvider = require("@truffle/hdwallet-provider");
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 
 require("dotenv").config();
 
@@ -14,7 +14,7 @@ const TOMOCHAIN_TESTNET_RPC = process.env.TOMOCHAIN_TESTNET_RPC;
 const POLYGON_MUMBAI_TESTNET_RPC = process.env.POLYGON_MUMBAI_TESTNET_RPC;
 const MNEMONIC = process.env.MNEMONIC;
 module.exports = {
-  contracts_build_directory:"./src/build/contracts",
+  //contracts_build_directory:"./src/build/contracts",
   networks: {
     development: {
       host: "127.0.0.1",
