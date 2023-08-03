@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "production": "node dist/index.js production",
     "build": "npx tsc "
   },
   "keywords": [],
