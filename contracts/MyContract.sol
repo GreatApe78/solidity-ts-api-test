@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.2;
 
-contract MyContract {
+import "@openzeppelin/contracts/access/Ownable.sol";
+contract MyContract is Ownable{
     uint256 public value;
 
     event ValueChanged(uint256 indexed newValue);
